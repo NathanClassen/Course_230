@@ -1,4 +1,4 @@
-const  Handlebars = import("handlebars");
+const Handlebars = require("handlebars");
 
 var post = {
   title: 'Lorem ipsum dolor sit amet',
