@@ -1,0 +1,154 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background: #6d0c1e;
+}
+
+main {
+  background: #fff;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 10px 0 10px;
+  width: 1000px;
+}
+
+div#controls {
+  display: inline-block;
+  height: 400px;
+  margin: 0 auto 0 25px;
+  width: 300px;
+}
+
+div#screen {
+  background: linear-gradient(#8df, #237);
+  height: 600px;
+  margin: 5px auto 10px;
+  position: relative;
+  width: 95%;
+}
+
+div#screen > div {
+  background: #dde338;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+  z-index: 1;
+}
+
+div#screen div.circle {
+  border-radius: 100%;
+}
+
+#screen div.star {
+  background: transparent;
+  width: 0;
+  height: 0;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-bottom: 34px solid #dde338;
+  position: absolute;
+}
+#screen div.star:after {
+  width: 0;
+  height: 0;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-top: 34px solid #dde338;
+  position: absolute;
+  content: "";
+  top: 11px;
+  left: -17px;
+}
+
+#draggables {
+  display: inline-block;
+  margin-bottom: 100px;
+}
+
+#draggables div {
+  background: #ddd;
+  display: inline-block;
+  margin: 0 30px;
+}
+
+#draggables div.square {
+  height: 30px;
+  width: 30px;
+}
+
+#draggables div.circle {
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+}
+
+#draggables div.star {
+  background: transparent;
+  width: 0;
+  height: 0;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-bottom: 34px solid #ddd;
+  position: relative;
+}
+#draggables div.star:after {
+  width: 0;
+  height: 0;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-top: 34px solid #ddd;
+  position: absolute;
+  content: "";
+  top: 11px;
+  left: -17px;
+}
+  
+
+a + a {
+  margin-left: 10px;
+}
+
+form {
+  margin-top: 40px;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+legend {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+br + input, br + input + input {
+  margin-top: 10px;
+  width: 50px;
+}
+
+button {
+  margin-top: 40px;
+}
+
+#controls + div {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+}
+
+#controls + div ul li {
+  padding: 10px;
+}

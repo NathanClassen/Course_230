@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>title</title>
+    <meta charset="UTF-8">
+    <script>
+      document.addEventListener('DOMContentLoaded', function(event) {
+        var addButton = document.getElementById('add');
+        var subButton = document.getElementById('subtract');
+        var multButton = document.getElementById('multiply');
+        var divButton = document.getElementById('divide');
+        var zeroButton = document.getElementById('zero');
+        //var anotherButton = document.getElementById('another');
+
+        var output = document.getElementById('output');
+        var count = 0;
+
+        addButton.addEventListener('click', function(event) {
+          count += 1;
+          output.textContent = String(count);
+        });
+        subButton.addEventListener('click', function(event) {
+          count -= 1;
+          output.textContent = String(count);
+        });
+        multButton.addEventListener('click', function(event) {
+          count *= count;
+          output.textContent = String(count);
+        });
+        divButton.addEventListener('click', function(event) {
+          count /= 2;
+          output.textContent = String(count);
+        });
+        zeroButton.addEventListener('click', function(event) {
+          count = 0;
+          output.textContent = String(count);
+        });/*
+        anotherButton.addEventListener('click', function(event) {
+          var span = document.createElement('span');
+          var add = document.createElement('button');
+          var sub = document.createElement('button');
+          var mult = document.createElement('button');
+          var div = document.createElement('button');
+          var zero = document.createElement('button');
+          var field = document.createElement('p');
+          field.appendChild(span);
+          field.appendChild(add);
+          field.appendChild(sub);
+          field.appendChild(mult);
+          field.appendChild(div);
+          field.appendChild(zero);
+          field.appendChild(field);
+          document.body.appendChild(field);
+        });*/
+
+      });
+    </script>
+  </head>
+
+  <body>
+    <p id='field1'>
+      <span id="output">0</span>
+      <button id="add">Add One</button>
+      <button id="subtract">Subtract One</button>
+      <button id="multiply">Times Self</button>
+      <button id="divide">Divide by 2</button>
+      <button id="zero">0</button>
+
+    </p>
+  </body>
+</html>

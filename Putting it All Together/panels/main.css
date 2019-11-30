@@ -1,0 +1,30 @@
+div#wrap {
+  margin-left: 183px;
+  height: 620px;
+  width: 1300px;
+}
+
+div.wrapper {
+  display: inline-block;
+  margin: 0 50px;
+}
+
+article.panel {
+  background: #eee;
+  box-sizing: border-box;
+  display: none;
+  margin: 5px auto 0;
+  padding: 5px;
+  width: 300px;
+}
+
+.button {
+  border-style: none;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  height: 100px;
+  width: 300px;
+}

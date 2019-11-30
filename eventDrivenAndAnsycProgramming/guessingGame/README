@@ -1,0 +1,10 @@
+The goal of this assignment is to create a guessing game that asks the player to guess an integer between 1 and 100 chosen by the computer. The program first picks a random value using a random number generator. The player then enters her guess and submits it, and the program checks whether the guess is higher, lower, or equal to the computer's chosen number, and reports the result. The player may continue to play until she guesses the number.
+
+when page loads
+  application picks number,
+    user enters num in input,
+      upon submitting page tells if too low or high
+        each submission increments totalGuesses
+        if the guess is right display winning message
+
+event attached to submit button

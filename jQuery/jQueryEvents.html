@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>jQuery Events</title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+      $(function() {
+        var $p = $("p");
+        var OUTPUT = "Your favorite fruit is ";
+
+        $('a').click(function(event) {
+          event.preventDefault();
+          var $anchor = $(this);
+          $p.text(OUTPUT + $anchor.text());
+        });
+
+        $('form').submit(function(event) {
+          event.preventDefault();
+          var fruit = $("input").filter(":text").val();
+          $p.text(OUTPUT + fruit);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Apples</a></li>
+      <li><a href="#">Oranges</a></li>
+      <li><a href="#">Bananas</a></li>
+    </ul>
+
+    <form action="#" method="post">
+      <fieldset>
+        <input type="text">
+        <input type="submit" value="Choose">
+      </fieldset>
+    </form>
+
+    <p>Choose your favorite fruit!</p>
+  </body>
+</html>

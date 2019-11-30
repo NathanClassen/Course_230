@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>jQuery Events</title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+      $(function() {
+        var $p = $("p");
+        $p.parent(".highlight").css('color', 'blue');
+
+        $("#javascript").closest("ul").addClass("categories");
+
+        alert($("ul#navigation").children().length);
+      });
+    </script>
+    <style>
+      .categories {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <blockquote>
+      <p>You have no chance to survive make your time.</p>
+    </blockquote>
+
+    <blockquote>
+      <p>Ha ha ha ha ...</p>
+    </blockquote>
+
+    <blockquote class="highlight">
+      <p>Captain !!</p>
+    </blockquote>
+
+    <blockquote>
+      <p>Take off every Zig!</p>
+    </blockquote>
+
+
+    <ul id="navigation">
+      <li>
+        <a href="#">Categories</a>
+        <ul>
+          <li><a id="html" href="#">HTML</a></li>
+          <li><a id="css" href="#">CSS</a></li>
+          <li><a id="javascript" href="#">Javascript</a></li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

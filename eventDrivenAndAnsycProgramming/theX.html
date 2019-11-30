@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The X</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+      .x {
+        position: absolute;
+        transform: rotate(45deg);
+        top: 20px;
+        left: 20px;
+      }
+
+      .x .horizontal {
+        width: 400px;
+        height: 50px;
+        position: absolute;
+        left: -175px;
+        background: red;
+      }
+
+      .x .vertical {
+        height: 400px;
+        width: 50px;
+        background: red;
+        position: absolute;
+        left: 0px;
+        top: -170px;
+      }
+    </style>
+    <script type="text/javascript">
+      var allowFollow = true;
+
+      document.addEventListener('click', function(e) {
+        var x = document.querySelector('div.x');
+
+        var xPos = e.clientX;
+        var yPos = e.clientY;
+        
+        x.style.left = `${xPos}px`;
+        x.style.top =  `${yPos}px`;
+        allowFollow = !!allowFollow ? false : true;
+      });
+
+      document.addEventListener('mousemove', function(e) {
+        var x = document.querySelector('div.x');
+
+        if (allowFollow) {
+          var xPos = e.clientX;
+          var yPos = e.clientY;
+          
+          x.style.left = `${xPos}px`;
+          x.style.top =  `${yPos}px`;
+        }
+        
+      });
+
+      document.addEventListener('keydown', function(e) {
+        var colors = {
+          r: 'red',
+          g: 'green',
+          b: 'blue',
+          y: 'yellow',
+          q: 'black',
+          p: 'purple',
+          t: 'brown',
+          s: 'teal',
+        }
+        
+        document.querySelector('.horizontal').style.background = colors[e.key] || 'red';
+        document.querySelector('.vertical').style.background = colors[e.key] || 'green';
+      });
+    </script>
+  </head>
+  <body>
+    <div class="x">
+      <div class="horizontal"></div>
+      <div class="vertical"></div>
+    </div> 
+  </body>
+</html>

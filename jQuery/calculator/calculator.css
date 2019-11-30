@@ -1,0 +1,31 @@
+body {
+  background: #601;
+}
+
+div {
+  background: #abc;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 5px #400;
+  height: 500px;
+  margin: 100px auto 0 auto;
+  padding: 30px;
+  width: 250px;
+}
+
+#display {
+  background: #eee;
+  border: 0.5px solid #555;
+  box-sizing: border-box;
+  color: #086;
+  font-size: 25px;
+  font-weight: bold;
+  height: 90px;
+  letter-spacing: 3.1px;
+  overflow-x: scroll;
+  padding: 20px 10px 2px 2px;
+  text-align: right;
+  vertical-align: middle;
+}
+

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>jQuery Basics</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stylesheets/base.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="javascripts/exercises.js"></script>
+  </head>
+  <body>
+    <main id="content">
+      <h1>Page Heading</h1>
+      <img src="http://c4.staticflickr.com/8/7349/9971217635_7cf797f5c3_c.jpg" />
+      <p>1. Aliquam sit amet lobortis lectus, nec finibus ligula. Nullam elementum metus ut feugiat pretium. Nunc ultrices dictum massa et feugiat. Donec molestie non ligula aliquam sagittis. Mauris bibendum est ut sapien tristique finibus. Donec fermentum at dolor volutpat placerat. Vivamus nisi elit, commodo eget quam eu, varius viverra massa. Phasellus nec ultricies nibh. Pellentesque et nunc tempor, efficitur neque non, dignissim dolor. Nullam nec tincidunt justo. In vel sapien venenatis, imperdiet turpis at, bibendum risus.</p>
+      <p>2. Mauris pharetra maximus arcu a imperdiet. Nunc egestas, mauris non scelerisque vehicula, mi felis vulputate arcu, eu condimentum eros augue sed massa. Praesent aliquet lectus at lorem finibus, et pretium leo imperdiet. Cras lobortis euismod ex, vel blandit nisl placerat sed. Aliquam erat volutpat. Sed efficitur tellus a venenatis ultricies. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris eu est id lorem placerat blandit ac sit amet arcu.</p>
+      <ul>
+        <li data-id="0">Apple</li>
+        <li data-id="1">Apricot</li>
+        <li data-id="2">Banana</li>
+        <li data-id="3">Blueberry</li>
+        <li data-id="4">Cantaloupe</li>
+        <li data-id="5">Cherry</li>
+        <li data-id="6">Coconut</li>
+      </ul>
+      <p>3. Mauris pharetra maximus arcu a imperdiet. Nunc egestas, mauris non scelerisque vehicula, mi felis vulputate arcu, eu condimentum eros augue sed massa. Praesent aliquet lectus at lorem finibus, et pretium leo imperdiet. Cras lobortis euismod ex, vel blandit nisl placerat sed. Aliquam erat volutpat. Sed efficitur tellus a venenatis ultricies. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris eu est id lorem placerat blandit ac sit amet arcu.</p>
+      <p>4. Aliquam sit amet lobortis lectus, nec finibus ligula. Nullam elementum metus ut feugiat pretium. Nunc ultrices dictum massa et feugiat. Donec molestie non ligula aliquam sagittis. Mauris bibendum est ut sapien tristique finibus. Donec fermentum at dolor volutpat placerat. Vivamus nisi elit, commodo eget quam eu, varius viverra massa. Phasellus nec ultricies nibh. Pellentesque et nunc tempor, efficitur neque non, dignissim dolor. Nullam nec tincidunt justo. In vel sapien venenatis, imperdiet turpis at, bibendum risus.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Attending</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Frank</td>
+            <td>&check;</td>
+          </tr>
+          <tr>
+            <td>Amber</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Sandra</td>
+            <td>&check;</td>
+          </tr>
+          <tr>
+            <td>Josh</td>
+            <td>&check;</td>
+          </tr>
+          <tr>
+            <td>Betsy</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form action="" method="post">
+        <fieldset>
+          <dl>
+            <dt><label for="first_name">First Name</label></dt>
+            <dd><input type="text" name="first_name" /></dd>
+            <dt><label for="last_name">Last Name</label></dt>
+            <dd><input type="text" name="last_name" /></dd>
+            <dt><label for="employment">Employment</label></dt>
+            <dd>
+              <select name="employment">
+                <option value="">Choose</option>
+                <option value="full_time">Full-time</option>
+                <option value="part_time">Part-time</option>
+              </select>
+            </dd>
+            <dt><label for="job_role">Job Role</label></dt>
+            <dd>
+              <ul>
+                <li>
+                  <label><input type="radio" name="job_role" value="design" checked />Design</label>
+                </li>
+                <li>
+                  <label><input type="radio" name="job_role" value="front_end" />Front end</label>
+                </li>
+                <li>
+                  <label><input type="radio" name="job_role" value="back_end" />Back end</label>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+        </fieldset>
+      </form>
+
+      <ul class="level-1">
+        <li class="item-i">I</li>
+        <li class="item-ii">II
+          <ul class="level-2">
+            <li class="item-a">A</li>
+            <li class="item-b">B
+              <ul class="level-3">
+                <li class="item-1">1</li>
+                <li class="item-2">2</li>
+                <li class="item-3">3</li>
+              </ul>
+            </li>
+            <li class="item-c">C</li>
+          </ul>
+        </li>
+        <li class="item-iii">III</li>
+      </ul>
+
+      <div class="inactive"><p>I'm inactive</p></div>
+      <div class="active"><p>I'm active</p></div>
+    </main>
+  </body>
+</html>

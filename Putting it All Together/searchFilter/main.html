@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Filtering</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="page">
+    <main>
+      <h1>Games</h1>
+      <ul id="list">
+        <li data-console="Nintendo 3DS">The Legend of Zelda: Majora's Mask 3D for Nintendo 3DS</li>
+        <li data-console="Nintendo 3DS">Super Smash Bros. for Nintendo 3DS</li>
+        <li data-console="Nintendo WiiU">Super Smash Bros. for Nintendo WiiU</li>
+        <li data-console="Nintendo WiiU">LEGO Batman 3: Beyond Gotham for Nintendo WiiU</li>
+        <li data-console="Xbox One">LEGO Batman 3: Beyond Gotham for Xbox One</li>
+        <li data-console="PlayStation 4">LEGO Batman 3: Beyond Gotham for PlayStation 4</li>
+        <li data-console="PlayStation 4">Far Cry 4 for PlayStation 4</li>
+        <li data-console="Xbox One">Far Cry 4 for Xbox One</li>
+        <li data-console="PlayStation 4">Call of Duty: Advanced Warfare for PlayStation 4</li>
+        <li data-console="Xbox One">Call of Duty: Advanced Warfare for Xbox One</li>
+      </ul>
+    </main>
+    <aside>
+      <form id="filters" action="#" method="get">
+        <fieldset>
+          <ul>
+            <label>
+              <li>
+                <input type="checkbox" value="Nintendo 3DS" checked="checked">Nintendo 3DS
+              </li>
+            </label>
+            <label>
+              <li>
+                <input type="checkbox" value="Nintendo WiiU" checked="checked">Nintendo WiiU
+              </li>
+            </label>
+            <label>
+              <li>
+                <input type="checkbox" value="PlayStation 4" checked="checked">PlayStation 4
+              </li>
+            </label>
+            <label>
+              <li>
+                <input type="checkbox" value="Xbox One" checked="checked"> Xbox One
+              </li>
+            </label>
+          </ul>
+        </fieldset>
+      </form>
+    </aside>
+    </div>
+  </body>
+</html>

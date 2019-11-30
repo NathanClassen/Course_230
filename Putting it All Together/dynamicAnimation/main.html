@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Animation</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <main>
+      <div id="screen"></div>
+
+      <div id="controls">
+        <a id="animate-button" href="">start</a><a id="stop-button" href="">stop</a><a id="reverse-button" href="">reverse</a>
+        <form>
+          <fieldset>
+            <legend>Type</legend>
+            <ul>
+              <li>
+                <input type="radio" name="shapeType" value="star"><label>Star</label>
+              </li>
+              <li>
+                <input type="radio" name="shapeType" value="square"><label>Square</label>
+              </li>
+              <li>
+                <input type="radio" name="shapeType" value="circle"><label>Circle</label>
+              </li>
+            </ul>
+          </fieldset>
+          
+          <fieldset>
+            <label>Starting Point <br />
+              <input type="number" name="startX" placeholder="x:" value="0" min="0" max="920">
+              <input type="number" name="startY" placeholder="y:" value="0" min="0" max="570">
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <label>Ending Point <br />
+              <input type="number" name="endX" placeholder="x:" value="0" min="0" max="920">
+              <input type="number" name="endY" placeholder="y:" value="0" min="0" max="570">
+            </label>
+          </fieldset>
+
+          <input type="submit" name="add" />
+        </form>
+      </div>
+      <div>
+        <div id="draggables">
+          <div class="star" draggable="true" ></div>
+          <div class="square" draggable="true" ></div>
+          <div class="circle" draggable="true" ></div>
+        </div>
+        <ul>
+          <li>Click "start" to see animation</li>
+          <li>Click "reverse" to see animation in reverse at anytime</li>
+          <li>Click "stop" to halt animation in place. From here, click either "start" or "reverse"</li>
+          <li style="color: #e33;">Click on a shape to remove it from the screen</li>
+        </ul>
+      </div>
+      
+    </main>
+  </body>
+</html>
